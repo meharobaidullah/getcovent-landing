@@ -9,6 +9,8 @@ import {
   AccordionContent,
 } from "@/components/ui/accordion"
 
+const AccordionAny = Accordion as any
+
 export default function FaqSection() {
   return (
     <Section id="faq" className="bg-background">
@@ -50,10 +52,10 @@ export default function FaqSection() {
               </TabsList>
               {faqTabs.map((t) => (
                 <TabsContent key={t.id} value={t.id}>
-                  <Accordion
+                  <AccordionAny
                     type="single"
                     collapsible
-                    defaultValue="0"
+                    defaultValue={["0"]}
                     className="w-full divide-y divide-border"
                   >
                     {t.items.map((item, idx) => (
@@ -70,7 +72,7 @@ export default function FaqSection() {
                         </AccordionContent>
                       </AccordionItem>
                     ))}
-                  </Accordion>
+                  </AccordionAny>
                 </TabsContent>
               ))}
             </Tabs>
