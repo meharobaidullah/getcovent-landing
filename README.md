@@ -1,21 +1,16 @@
-# Next.js template
-
-This is a Next.js template with shadcn/ui.
-
-## Adding components
-
-To add components to your app, run the following command:
+## Setup
 
 ```bash
-npx shadcn@latest add button
+pnpm install
+pnpm dev
 ```
 
-This will place the ui components in the `components` directory.
+## Tech stack
 
-## Using components
+Next.js, shadcn/ui (Base UI), Tailwind, Geist + Fraunces. Server components, in-memory seller context, no real lead data.
 
-To use the components in your app, import them as follows:
+## UX improvements
 
-```tsx
-import { Button } from "@/components/ui/button";
-```
+1. Expectations before address: 3-step line + privacy note.
+2. Honest comparison: side-by-side table with downsides, fit cards.
+3. Optional situation picker: 1-tap toggle swaps reassurance, low-commitment "exploring" option.
