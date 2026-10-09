@@ -17,7 +17,7 @@ export default function TestimonialsSection() {
           <SampleBadge text="Sample testimonials" />
         </div>
         <div
-          className="-mx-2 flex snap-x snap-mandatory scrollbar-thin gap-4 overflow-x-auto px-2 pb-4"
+          className="relative -mx-2 flex snap-x snap-mandatory scrollbar-thin gap-4 overflow-x-auto px-2 pb-4"
           role="region"
           aria-label="Testimonials"
           tabIndex={0}
@@ -36,7 +36,7 @@ export default function TestimonialsSection() {
               </div>
               <p className="sr-only">5 out of 5 stars</p>
               <blockquote className="text-base leading-relaxed font-medium">
-                "{t.quote}"
+                {`"${t.quote}"`}
               </blockquote>
               <div className="mt-4 flex items-center gap-3 border-t border-border pt-4">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-secondary text-sm font-semibold text-secondary-foreground">

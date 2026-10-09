@@ -1,6 +1,9 @@
 import { cn } from "@/lib/utils"
 
-export default function Logo({ className }: { className?: string }) {
+export default function Logo({
+  className,
+  ...props
+}: React.ComponentProps<"a">) {
   return (
     <a
       href="#"
@@ -9,6 +12,7 @@ export default function Logo({ className }: { className?: string }) {
         className
       )}
       aria-label="Covent home"
+      {...props}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
